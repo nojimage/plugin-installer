@@ -6,13 +6,11 @@ php:
   - 5.6
   - 7.0
   - 7.2
-  - 7.3
-
-
+  - 7.4
 
 matrix:
   include:
-    - php: 7.3
+    - php: 7.4
       env: PHPCS=1
 
 before_script: composer install --prefer-dist --dev
